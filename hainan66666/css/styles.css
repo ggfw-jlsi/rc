@@ -1,0 +1,41 @@
+/* CSS (styles.css) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* 去掉默认的外边距 */
+    padding: 0; /* 去掉默认的内边距 */
+    box-sizing: border-box; /* 包含内边距和边框在宽度和高度内 */
+}
+
+.header {
+    background-color: #007BFF; /* 蓝色背景 */
+    color: white; /* 白色字体 */
+    padding: 10px 0; /* 上下内边距 */
+    text-align: center; /* 居中对齐 */
+    position: fixed; /* 固定位置 */
+    width: 100%; /* 占满宽度 */
+    top: 0; /* 顶部对齐 */
+    z-index: 1000; /* 确保在最上层 */
+}
+
+.header h1 {
+    margin: 0; /* 去掉默认外边距 */
+}
+
+.long-image {
+    display: block; /* 去除图片下方的空白间隙 */
+    max-width: 100%; /* 适应容器宽度 */
+    height: auto; /* 保持比例 */
+    margin: 60px auto 0; /* 上下间距和水平居中 */
+    cursor: default; /* 鼠标悬停时显示默认光标 */
+}
+
+/* 媒体查询：根据屏幕宽度调整样式 */
+@media (max-width: 600px) {
+    .header {
+        padding: 5px 0; /* 缩小内边距 */
+    }
+
+    .header h1 {
+        font-size: 1.5em; /* 缩小字体大小 */
+    }
+}
